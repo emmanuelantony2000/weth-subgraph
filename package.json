@@ -1,0 +1,18 @@
+{
+  "name": "weth",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ emmanuel/weth",
+    "create-local": "graph create --node https://subgraph.kava.io/deploy emmanuel/weth",
+    "remove-local": "graph remove --node https://subgraph.kava.io/deploy emmanuel/weth",
+    "deploy-local": "graph deploy --node https://subgraph.kava.io/deploy emmanuel/weth",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.55.0",
+    "@graphprotocol/graph-ts": "0.30.0"
+  },
+  "devDependencies": { "matchstick-as": "0.5.0" }
+}
